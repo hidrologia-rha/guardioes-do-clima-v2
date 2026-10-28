@@ -1,0 +1,49 @@
+/* Tokens visuais: caderno de campo + aquarela tropical */
+:root {
+  --paper: #f6ecd4;
+  --paper-2: #ecdcb6;
+  --paper-3: #e0cb9c;
+  --ink: #2c2116;
+  --ink-soft: #5b4834;
+  --wood: #7a4f2c;
+  --wood-dark: #4a2f19;
+  --teal: #176f6c;
+  --teal-2: #24948d;
+  --teal-light: #bfe5df;
+  --sun: #f2b33d;
+  --sun-dark: #c7861b;
+  --leaf: #4c8a37;
+  --ok: #2b7a4b;
+  --ok-bg: #d9efd9;
+  --bad: #a8432c;
+  --bad-bg: #f7dccf;
+  --sky: #78c0e6;
+  --shadow: 0 10px 30px rgba(30, 18, 6, .35);
+  --radius: 14px;
+  --font-title: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-text: "Trebuchet MS", "Segoe UI", Verdana, system-ui, sans-serif;
+  --fs: 18px;
+}
+:root.big-text { --fs: 21px; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; }
+body {
+  background: #16232b;
+  color: var(--ink);
+  font-family: var(--font-text);
+  font-size: var(--fs);
+  line-height: 1.45;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+kbd {
+  font-family: var(--font-text); font-size: .7em; padding: 1px 5px; border-radius: 4px;
+  background: rgba(0,0,0,.12); border: 1px solid rgba(0,0,0,.2); border-bottom-width: 2px;
+}
+strong { color: var(--teal); }
+[hidden] { display: none !important; }
+#game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }

@@ -1,0 +1,1 @@
+﻿Pasta reservada para ilustrações/sons futuros. A arte atual é procedural (src/art.js) e o som é sintetizado (src/audio.js). Para usar uma imagem, registre-a em data/asset-manifest.js (veja docs/art-guide.md).
